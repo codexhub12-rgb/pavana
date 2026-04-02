@@ -86,36 +86,71 @@ h1, h2, h3, h4 {
 }
 
 /* Navbar */
+.glass-nav {
+    padding: 10px 0;
+    transition: var(--transition-slow);
+}
+
 nav {
-    height: 80px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative; /* For absolute centering of links */
 }
 
 .logo {
     font-weight: 800;
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    letter-spacing: -0.02em;
+    cursor: pointer;
 }
 
 .nav-links {
     display: flex;
-    gap: 40px;
+    gap: 32px;
     list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .nav-links a {
     text-decoration: none;
     color: var(--text-main);
     font-weight: 500;
+    font-size: 0.95rem;
+    transition: var(--transition-fast);
+    position: relative;
+    padding: 8px 0;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
     transition: var(--transition-fast);
 }
 
 .nav-links a:hover {
     color: var(--primary);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-cta {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .cta-btn {
@@ -139,13 +174,13 @@ nav {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     align-items: center;
     position: relative;
-    padding-top: 120px;
-    background: radial-gradient(circle at top right, #E0F2FE 0%, transparent 40%),
-                radial-gradient(circle at bottom left, #DBEAFE 0%, transparent 40%);
+    padding-top: 100px; /* Reduced since header is slimmer */
+    background: radial-gradient(circle at top right, #E0F2FE 0.2%, transparent 35%),
+                radial-gradient(circle at bottom left, #DBEAFE 0.2%, transparent 35%);
 }
 
 .hero-content {
@@ -335,6 +370,13 @@ input:focus, select:focus {
 }
 
 /* Responsive Grid Mobile Fix */
+@media (max-width: 968px) {
+    .nav-links { display: none; } /* Hide absolute links on tablets/phones for now */
+    .hero-viz { display: none; }
+    .hero h1 { font-size: 3.2rem; }
+    .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
 @media (max-width: 768px) {
     .grid { grid-template-columns: 1fr !important; }
     .hero-content { text-align: center; }
