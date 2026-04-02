@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina Clean | Premium Cleaning Services for Home & Office</title>
+    <meta name="description" content="Lumina Clean offers professional, high-end cleaning services for residential and commercial spaces. Book your spotless experience today.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="glass-nav">
+        <div class="container">
+            <nav id="navbar">
+                <div class="logo text-gradient" id="home">
+                    <i data-lucide="sparkle"></i>
+                    Lumina Clean
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                </ul>
+                <div class="nav-cta">
+                    <a href="#booking" class="cta-btn">Book Now</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge" style="background: #E0F2FE; color: #3B82F6; padding: 5px 15px; border-radius: 20px; font-weight: 600; font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">✨ Premium Care, Every Time</span>
+                <h1>A Brighter, <br><span class="text-gradient">Cleaner Life</span></h1>
+                <p>Welcome to Lumina Clean, where we combine modern techniques with meticulous care to deliver an unparalleled cleaning experience for your home and office.</p>
+                <div class="hero-btns" style="display: flex; gap: 20px; align-items: center;">
+                    <a href="#booking" class="cta-btn">Get Started</a>
+                    <a href="#services" style="color: var(--text-main); text-decoration: none; font-weight: 600; display: flex; align-items: center; gap: 8px;">Learn More <i data-lucide="arrow-right" style="width: 18px;"></i></a>
+                </div>
+            </div>
+            
+            <!-- Hero CSS Visualization -->
+            <div class="hero-viz">
+                <div class="circle-main"></div>
+                <div class="floating-icon glass-card f-1">
+                    <i data-lucide="home" style="width: 32px; height: 32px; color: var(--primary);"></i>
+                </div>
+                <div class="floating-icon glass-card f-2">
+                    <i data-lucide="building-2" style="width: 32px; height: 32px; color: var(--primary);"></i>
+                </div>
+                <div class="floating-icon glass-card f-3">
+                    <i data-lucide="shield-check" style="width: 32px; height: 32px; color: var(--primary);"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 id="services-title">Services Built for <span class="text-gradient">Excellence</span></h2>
+                <p>From deep cleaning to regular maintenance, we offer tailored solutions to keep your environment pristine and healthy.</p>
+            </div>
+            <div class="grid">
+                <div class="card glass-card">
+                    <div class="icon-box"><i data-lucide="home"></i></div>
+                    <h3>Residential Cleaning</h3>
+                    <p>Expert home cleaning that covers every corner. From kitchens to bedrooms, we make your home sparkle.</p>
+                </div>
+                <div class="card glass-card">
+                    <div class="icon-box"><i data-lucide="briefcase"></i></div>
+                    <h3>Commercial Spaces</h3>
+                    <p>Professional cleaning for offices, clinics, and more. A clean workspace leads to higher productivity.</p>
+                </div>
+                <div class="card glass-card">
+                    <div class="icon-box"><i data-lucide="zap"></i></div>
+                    <h3>Deep Deep Clean</h3>
+                    <p>When you need more than a regular sweep. We tackle the hidden dust and stubborn grime.</p>
+                </div>
+                <div class="card glass-card">
+                    <div class="icon-box"><i data-lucide="wind"></i></div>
+                    <h3>Eco-Friendly Care</h3>
+                    <p>Safe for kids and pets. We use biodegradable products that are tough on dirt but gentle on earth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" style="background: linear-gradient(180deg, #F8FAFC 0%, #E0F2FE 100%);">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
+                <div class="booking-text">
+                    <h2 style="font-size: 3rem; margin-bottom: 2rem;">Ready for a <span class="text-gradient">Spotless Space?</span></h2>
+                    <ul style="list-style: none; margin-bottom: 2rem;">
+                        <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> Same-day availability</li>
+                        <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> Eco-friendly solutions included</li>
+                        <li style="display: flex; align-items: center; gap: 10px; margin-bottom: 15px;"><i data-lucide="check-circle" style="color: var(--primary);"></i> Satisfaction guaranteed</li>
+                    </ul>
+                </div>
+                <div class="booking-form glass-card" style="padding: 40px;">
+                    <form id="cleanForm">
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-weight: 600; margin-bottom: 8px;">Full Name</label>
+                            <input type="text" placeholder="John Doe" style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-weight: 600; margin-bottom: 8px;">Email Address</label>
+                            <input type="email" placeholder="john@example.com" style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px;">
+                        </div>
+                        <div style="margin-bottom: 20px;">
+                            <label style="display: block; font-weight: 600; margin-bottom: 8px;">Service Type</label>
+                            <select style="width: 100%; padding: 12px; border: 1px solid #CBD5E1; border-radius: 8px;">
+                                <option>Residential Deep Clean</option>
+                                <option>Office Maintenance</option>
+                                <option>Move-In / Move-Out</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="cta-btn" style="width: 100%;">Instantly Book Now</button>
+                    </form>
+                    <div id="successMsg" style="display: none; text-align: center; color: var(--primary); font-weight: 600; margin-top: 20px;">
+                        <i data-lucide="circle-check"></i> Booking request received!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Clients <span class="text-gradient">Beam</span></h2>
+            </div>
+            <div class="grid" style="grid-template-columns: repeat(3, 1fr);">
+                <div class="card glass-card" style="font-style: italic; position: relative;">
+                    <i data-lucide="quote" style="position: absolute; top: 10px; right: 10px; opacity: 0.1; width: 40px; height: 40px;"></i>
+                    <p>"Lumina Clean changed my weekends. I actually have time to relax now, and the house has never looked this good."</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 40px; height: 40px; background: #DBEAFE; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--primary);">S</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Sarah Jenkins</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Homeowner</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card glass-card" style="font-style: italic; position: relative;">
+                    <i data-lucide="quote" style="position: absolute; top: 10px; right: 10px; opacity: 0.1; width: 40px; height: 40px;"></i>
+                    <p>"Their attention to detail in our clinic is spectacular. Very professional and reliable crew."</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 40px; height: 40px; background: #DBEAFE; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--primary);">M</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Marcus Thorne</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Medical Director</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card glass-card" style="font-style: italic; position: relative;">
+                    <i data-lucide="quote" style="position: absolute; top: 10px; right: 10px; opacity: 0.1; width: 40px; height: 40px;"></i>
+                    <p>"Best service in the city. They use eco-friendly stuff which was huge for us as pet owners."</p>
+                    <div style="margin-top: 20px; display: flex; align-items: center; gap: 15px;">
+                        <div style="width: 40px; height: 40px; background: #DBEAFE; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--primary);">T</div>
+                        <div>
+                            <h4 style="margin: 0; font-size: 1rem;">Tina & Bob</h4>
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">Apartment Residents</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <div class="logo footer-logo">
+                        <i data-lucide="sparkle"></i>
+                        Lumina Clean
+                    </div>
+                    <p style="color: #94A3B8; margin-top: 20px; max-width: 300px;">Providing premium cleaning services that make your environment radiant and healthy since 2018.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">House Cleaning</a></li>
+                        <li><a href="#">Office Cleaning</a></li>
+                        <li><a href="#">Move-In Clean</a></li>
+                        <li><a href="#">Disinfection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links" id="contact">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i data-lucide="phone" style="width: 14px; margin-right: 8px;"></i> (555) 123-4567</li>
+                        <li><i data-lucide="mail" style="width: 14px; margin-right: 8px;"></i> hello@luminaclean.com</li>
+                        <li><i data-lucide="map-pin" style="width: 14px; margin-right: 8px;"></i> 123 Shine Ave, Sparkle City</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Lumina Clean Services. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+</html>
