@@ -11,6 +11,20 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cleanForm) {
         cleanForm.addEventListener('submit', function(e) {
             e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('bookName').value;
+            const email = document.getElementById('bookEmail').value;
+            const contact = document.getElementById('bookContact').value;
+            const service = document.getElementById('bookService').value;
+
+            // Construct WhatsApp message
+            const message = `Hello, I want to book you. These are my details:\n\nName: ${name}\nEmail: ${email}\nContact Number: ${contact}\nService Type: ${service}`;
+            const whatsappUrl = `https://wa.me/233555357010?text=${encodeURIComponent(message)}`;
+            
+            // Open WhatsApp in a new tab
+            window.open(whatsappUrl, '_blank');
+
             this.style.opacity = '0';
             setTimeout(() => {
                 this.style.display = 'none';
