@@ -490,3 +490,74 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Mobile Navigation Drawer */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 968px) {
+    .menu-toggle {
+        display: block;
+    }
+    
+    .nav-links {
+        display: flex;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        transform: none;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border: 1px solid var(--glass-border);
+        border-top: none;
+        
+        /* Mobile Slide Animation Constraints */
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(-20px);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+    
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .nav-links a {
+        display: block;
+        font-size: 1.15rem;
+        padding: 12px 0;
+        color: var(--text-main);
+    }
+
+    /* Shrink the Book Now button slightly so hamburger fits perfectly on small phones */
+    .book-now-btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .logo { font-size: 1.35rem; }
+    .book-now-btn { padding: 8px 12px; font-size: 0.85rem; }
+}
